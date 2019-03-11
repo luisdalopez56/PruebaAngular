@@ -1,0 +1,30 @@
+<div>
+<h2>Lista de clientes</h2>
+<table class="table">
+  <thead>
+      <th scope="col">Codigo</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Edad</th>
+  </thead>  
+  <tbody>
+  
+  <tr *ngFor="let c of clientes; let i=index;">
+    
+    <th scope="row">{{c.id}}</th>
+      <td routerLink="/cliente-details/{{c.id}}">{{c.cliente_nombre}}</td>
+      <td routerLink="/cliente-details/{{c.id}}">{{c.cliente_apellido}}</td>
+      <td routerLink="/cliente-details/{{c.id}}">{{c.cliente_edad}}</td>
+      <button class="btn btn-danger active"title="delete cliente"(click)="deleteCliente(c.id)">Eliminar</button>
+
+      </tr>
+  </tbody>
+
+</table>
+</div>
+
+<div align = "center">
+  <button class="btn btn-primary active" (click)="addCliente()">
+    Añadir cliente
+  </button>
+</div>

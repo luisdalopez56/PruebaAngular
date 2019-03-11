@@ -1,0 +1,11 @@
+
+<div align= "center" *ngIf="cliente" class="clientes">
+  <h2>Detalles del cliente</h2>
+    
+  <div><span>Nombre: </span>{{cliente.cliente_nombre}}</div>
+  <div><span>Apellidos: </span>{{cliente.cliente_apellido}}</div>
+  <div><span>Edad: </span>{{cliente.cliente_edad}}</div>
+  <div>
+    <button routerLink="/clientes">Volver</button><button routerLink="/cliente-edit/{{cliente.id}}">Editar</button>
+  </div>
+</div>

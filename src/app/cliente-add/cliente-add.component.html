@@ -1,0 +1,15 @@
+<div>
+  <h2>Añadir Cliente</h2>
+  <div>
+    <label>Nombre del Cliente:
+      <input [(ngModel)]="clienteData.cliente_nombre" placeholder="Nombre del cliente"/>
+    </label><br>
+    <label>Apellidos del cliente:
+      <input [(ngModel)]="clienteData.cliente_apellido" placeholder="Apellidos del cliente"/>
+    </label><br>
+    <label>Edad del cliente:
+      <input [(ngModel)]="clienteData.cliente_edad" placeholder="Edad del cliente"/>
+    </label><br>
+  </div>
+  <button (click)="addCliente()">Añadir cliente</button>
+</div>
